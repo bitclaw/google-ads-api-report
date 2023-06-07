@@ -34,4 +34,12 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+    'google_ads' => [
+        'clientId' => env('GOOGLE_ADS_CLIENT_ID', ''),
+        'clientSecret' => env('GOOGLE_ADS_CLIENT_SECRET', ''),
+        'refreshToken' => env('GOOGLE_ADS_REFRESH_TOKEN', ''),
+        'developerToken' => env('GOOGLE_ADS_DEVELOPER_TOKEN', ''),
+        'loginCustomerId' => env('GOOGLE_ADS_LOGIN_CUSTOMER_ID', ''),
+    ],
+
 ];
