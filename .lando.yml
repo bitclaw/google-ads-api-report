@@ -23,7 +23,7 @@ services:
       - COMPOSER_PROCESS_TIMEOUT=3600 composer install -vvv
   database:
     type: mysql
-    portforward: 3306
+    portforward: 3309
     run_as_root:
       - mysql -uroot -e 'DROP DATABASE IF EXISTS laravel;'
       - mysql -uroot -e 'DROP DATABASE IF EXISTS google_ads_local;'
